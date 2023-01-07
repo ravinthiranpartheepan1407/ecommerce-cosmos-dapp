@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package raviecommercetest.raviecommercetest;
+
+option go_package = "raviecommercetest/x/raviecommercetest/types";
+
+message Post{
+    string creator = 1;
+    uint64 id = 2;
+    string productImage = 3;
+    string productPrice = 4;
+}

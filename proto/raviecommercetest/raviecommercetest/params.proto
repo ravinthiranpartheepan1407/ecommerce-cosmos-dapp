@@ -1,0 +1,12 @@
+syntax = "proto3";
+package raviecommercetest.raviecommercetest;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "ravi-ecommerce-test/x/raviecommercetest/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

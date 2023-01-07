@@ -1,0 +1,23 @@
+syntax = "proto3";
+package raviecommercetest.raviecommercetest;
+
+// this line is used by starport scaffolding # proto/tx/import
+
+option go_package = "ravi-ecommerce-test/x/raviecommercetest/types";
+
+// Msg defines the Msg service.
+service Msg {
+      rpc ProductImage(MsgProductImage) returns (MsgProductImageResponse);
+// this line is used by starport scaffolding # proto/tx/rpc
+}
+
+message MsgProductImage {
+  string creator = 1;
+  string productPrice = 2;
+}
+
+message MsgProductImageResponse {
+  uint64 id = 1;
+}
+
+// this line is used by starport scaffolding # proto/tx/message
